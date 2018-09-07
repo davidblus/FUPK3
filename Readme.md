@@ -51,4 +51,3 @@ Root手机（Root方法自行搜索）
 5. Android修改过的源码额外记录为patch了，自行查看吧。
 6. 更详细的内容看Other.md文件
 
-
