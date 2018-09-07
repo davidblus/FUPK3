@@ -108,6 +108,9 @@ public class MainActivity extends AppCompatActivity {
 
                 rootUtil.execute("am force-stop " + mConfig.mTargetPackage, null);         //restart
                 rootUtil.execute("am start -n " + mConfig.mTargetPackage + "/" + mConfig.mTargetActivity, null);
+
+//                Fupk upk = new Fupk(mConfig.mTargetPackage);
+//                upk.unpackAfter(10000);
             }
         });
         mDelete.setOnClickListener(new View.OnClickListener() {

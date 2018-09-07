@@ -33,6 +33,7 @@ public class XpEntry implements IXposedHookLoadPackage{
         }
         Fupk upk = new Fupk(config.mTargetPackage);
         upk.unpackAfter(10000);
+//        upk.unpackAfter(3000);
         return;
     }
 }

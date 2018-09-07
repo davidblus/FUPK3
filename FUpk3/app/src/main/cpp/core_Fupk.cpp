@@ -17,6 +17,7 @@
 //================= register function==================
 bool core_Fupk::registerNativeMethod(JNIEnv *env) {
     bool useSystem = true, useHookEntry = false;
+//    bool useSystem = false, useHookEntry = true;
     if (useSystem) {
         // for system entry
         auto clazz = env->FindClass("android/app/fupk3/Fupk");
@@ -61,7 +62,7 @@ void ::core_Fupk::unpackAll(JNIEnv *env, jobject obj, jstring folder) {
     // Hook all
     interface->ExportMethod = fupk_ExportMethod;
 
-    FLOGD("Now start to dump all dex file");
+    FLOGE("Now start to dump all dex file");
     auto pFolder = env->GetStringUTFChars(folder, nullptr);
     std::string sFolder = pFolder;
     sFolder = sFolder + "/.fupk3";

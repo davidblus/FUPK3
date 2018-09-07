@@ -9,6 +9,7 @@ package f8left.fupk3;
 
 public class Global {
     public final static String hookFile = "/data/local/tmp/FUpk3.txt";
+//    public final static String hookFile = "/data/local/tmp/FUpk33.txt";
     public final static String hookSo = "/data/local/tmp/libFupk3.so";
 
     public final static String CydiaModule = "cydia";

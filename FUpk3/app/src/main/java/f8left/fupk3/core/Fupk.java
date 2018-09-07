@@ -42,7 +42,7 @@ public class Fupk {
                     Log.d("F8LEFT", "unpack after " + millis + " millisec");
                     Thread.sleep(millis);
                     unpackNow();
-                } catch (InterruptedException e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
